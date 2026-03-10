@@ -12,7 +12,7 @@
     "role1": "Software Engineer",
     "role2": "Frontend Architect",
     "role3": "Full Stack Developer",
-    "description": "I build scalable, high-performance applications with a focus on exceptional user experiences. Based in Cape Town — working with the world.",
+    "description": "I build scalable, high-performance applications with a focus on exceptional user experiences. Based in Cape Town, working with the world.",
     "cta_work": "View My Work",
     "cta_contact": "Contact Me",
     "scroll": "Scroll to explore"
@@ -20,7 +20,7 @@
   "about": {
     "title": "About Me",
     "subtitle": "Building at scale, from Cape Town to the world",
-    "bio": "Software Engineer with 7+ years of experience architecting high-performance frontend systems and full stack applications. Currently leading frontend development at Solink, serving 10,000+ daily users. Previously at Aerobotics, building React Native applications used by 50,000+ farmers across Africa.",
+    "bio": "Software Engineer with 7+ years of experience architecting high-performance frontend systems and full stack applications. Currently leading frontend development at SOLINK, serving 10,000+ daily users. Previously at Aerobotics, building React Native applications used by 50,000+ farmers across Africa.",
     "bio2": "I'm passionate about clean architecture, developer experience, and building products that genuinely make an impact. Open to exciting global remote opportunities.",
     "stat1_value": "7+",
     "stat1_label": "Years Experience",
