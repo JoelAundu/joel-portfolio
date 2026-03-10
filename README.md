@@ -1,141 +1,85 @@
-# Joel Mosio Aundu — Portfolio
+# Joel Mosio Aundu
+### Software Engineer | React · TypeScript · Node.js
 
-Personal portfolio website built with React, Three.js, GSAP, and Framer Motion.
-
-Live at: **joelaundu.dev** *(deploy to set your domain)*
-
----
-
-## Tech Stack
-
-| Tool | Purpose |
-|------|---------|
-| React + Vite | Foundation |
-| TypeScript | Type safety |
-| Tailwind CSS | Styling + dark/light mode |
-| Framer Motion | Scroll animations, page transitions |
-| GSAP | Hero name reveal, text animations |
-| Three.js + React Three Fiber | 3D background scene (particles + torus knot) |
-| Lenis | Ultra-smooth scrolling |
-| i18next | EN / ES / FR language switching |
+📍 Cape Town, South Africa &nbsp;|&nbsp; 🌍 Open to Global Remote (US/EU Time Zones)
+📧 joel960801@gmail.com &nbsp;|&nbsp; 📞 +27 743 675 383
+🔗 [linkedin.com/in/joelaundu](https://linkedin.com/in/joelaundu) &nbsp;|&nbsp; 🐙 [github.com/JoelAundu](https://github.com/JoelAundu)
 
 ---
 
-## Features
+## Technical Summary
 
-- 3D animated hero with rotating torus knot and 2,500 particle field
-- GSAP staggered letter-by-letter name reveal on load
-- Animated role title cycling (Software Engineer → Frontend Architect → Full Stack Developer)
-- Custom light blue cursor with spring-follow ring (desktop only)
-- Scroll progress bar at top of page
-- Dark mode / Light mode with smooth transition (persists across visits)
-- Language switcher: English / Spanish / French (persists across visits)
-- 3D tilt effect on project cards (mouse-reactive)
-- Framer Motion scroll-triggered reveals on every section
-- Fully responsive (mobile, tablet, desktop)
-- Deployed on Vercel (free)
+**Frontend Architecture:** React, TypeScript, Next.js, Astro, GraphQL, TailwindCSS, WebSocket
+**Backend Engineering:** Node.js, Express, PostgreSQL, Prisma, REST APIs, Microservices
+**Full Stack:** JWT Authentication, WebSockets, Real-time Systems, File Processing, Testing
+**DevOps & Tools:** Docker, CI/CD, Jest, Playwright, Git, AWS, Firebase, MongoDB
 
 ---
 
-## Sections
+## Professional Experience
 
-1. **Hero** — Name, animated role, 3D scene, social links
-2. **About** — Bio, stats (7+ years, 10K+ users, 50K+ farmers)
-3. **Skills** — Frontend, Backend, Tools & DevOps, Mobile & Testing
-4. **Projects** — Real-Time Task Manager, Enterprise OMS, Agricultural Analytics App
-5. **Experience** — Solink (2022–Present), Aerobotics (2019–2022)
-6. **Contact** — Form + direct links (email, LinkedIn, GitHub, phone)
+### Solink — Software Engineer
+**October 2022 – Present | Cape Town, South Africa**
 
----
+- Lead frontend development and mentor 2 junior developers, conducting code reviews and providing technical guidance
+- Established CI/CD pipelines and frontend standards that reduced production bugs by **40%**
+- Architected white-label OMS UI system enabling 15+ enterprise clients to customize branding from a single codebase, reducing development time by **60%**
+- Engineered real-time collaborative features using WebSocket integration for **5,000+ concurrent users**
+- Built responsive UI component library with TypeScript and TailwindCSS, improving mobile engagement by **35%**
+- Developed secure file upload system with image processing and 50MB/user storage quotas
+- Collaborated on GraphQL schemas, PostgreSQL optimization, and microservice architecture
 
-## Getting Started
+### Aerobotics — Data Specialist → Frontend Developer
+**February 2019 – September 2022 | Cape Town, South Africa**
 
-```bash
-# Install dependencies
-npm install
-
-# Run dev server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+- Developed and maintained React Native mobile application serving agricultural analytics to **50,000+ farmers**
+- Implemented data visualization for satellite imagery and farm mapping, improving user engagement by **45%**
+- Processed geospatial data pipelines handling **2TB+** of satellite imagery monthly
+- Collaborated with product team to design and implement features based on user research and analytics
 
 ---
 
-## Project Structure
+## Key Projects
 
-```
-joel-portfolio/
-├── src/
-│   ├── canvas/
-│   │   └── HeroScene.tsx         # Three.js 3D scene
-│   ├── components/
-│   │   ├── Navbar.tsx             # Fixed nav + theme toggle + language switcher
-│   │   ├── Cursor.tsx             # Custom animated cursor
-│   │   ├── ScrollProgress.tsx     # Top scroll progress bar
-│   │   ├── Hero.tsx               # Hero section with GSAP animation
-│   │   ├── About.tsx              # About + stats
-│   │   ├── Skills.tsx             # Skills by category
-│   │   ├── Projects.tsx           # Project cards with 3D tilt
-│   │   ├── Experience.tsx         # Timeline + education
-│   │   ├── Contact.tsx            # Contact form + social links
-│   │   └── Footer.tsx
-│   ├── hooks/
-│   │   ├── useTheme.ts            # Dark/light mode with localStorage
-│   │   └── useLenis.ts            # Smooth scroll setup
-│   ├── locales/
-│   │   ├── en.json                # English
-│   │   ├── es.json                # Spanish
-│   │   └── fr.json                # French
-│   ├── i18n.ts                    # i18next setup
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css                  # Tailwind + custom styles
-├── index.html
-├── tailwind.config.js
-├── vite.config.ts
-└── tsconfig.json
-```
+### Zion Dew Naturals — Booking & Payment System
+Full Stack Developer
+- Built a complete online booking and payment system for a natural hair consultation business
+- Customers book a date and time, pay via PayFast, and automatically receive a confirmation email, Google Calendar invite, and Google Meet link
+- **Stack:** HTML, JavaScript, Supabase, PayFast, EmailJS, Google Apps Script
+
+### Real-Time Task Management Platform
+Full Stack Architect
+- Architected a complete fullstack application with real-time collaboration, file uploads, and advanced user management
+- **Stack:** React, TypeScript, Node.js, PostgreSQL, WebSockets, Docker, Jest
+
+### Enterprise Order Management System
+Frontend Lead
+- Led development of a white-label OMS used by 15+ enterprise clients — 60% faster onboarding, 40% fewer support tickets
+- **Stack:** React, GraphQL, TypeScript, TailwindCSS, Firebase
+
+### Agricultural Analytics Mobile App
+React Native Developer
+- Built and maintained a hybrid mobile app for farm management and satellite data visualization for 50,000+ active users
+- **Stack:** React Native, JavaScript, Firebase, Mapbox
 
 ---
 
-## Customization
+## Technical Skills
 
-### Update your projects
-Edit `src/components/Projects.tsx` — update the `projects` array with your GitHub/live links.
-
-### Update colors
-Edit `tailwind.config.js` — change `accent` from `#38bdf8` to any color you like.
-
-### Add a photo
-In `src/components/About.tsx` — add an `<img>` tag in the right column.
-
-### Add EmailJS to contact form
-In `src/components/Contact.tsx` — replace the `mailto:` fallback with your EmailJS credentials.
+| Category | Technologies |
+|----------|-------------|
+| Languages | TypeScript, JavaScript, SQL, GraphQL, HTML5, CSS |
+| Frameworks | React, Next.js, Astro, Node.js, Express, React Native, Jest |
+| Databases | PostgreSQL, MongoDB, Prisma |
+| Tools | Docker, Git, AWS, Firebase, TailwindCSS, WebSockets, JWT, CI/CD |
+| Methodologies | Agile, Scrum, Microservices, TDD, System Design |
 
 ---
 
-## Deployment (Vercel — Free)
+## Education & Certifications
 
-1. Push this folder to a GitHub repository
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**
-3. Import your GitHub repo
-4. Click **Deploy** — done
+**Full Stack Engineering Specialization** — HyperionDev
+Advanced MERN Stack · Microservices · Cloud Architecture
 
-Custom domain: Vercel Settings → Domains → Add your domain.
-
----
-
-## Contact
-
-**Joel Mosio Aundu**
-- Email: joel960801@gmail.com
-- LinkedIn: [linkedin.com/in/joelaundu](https://linkedin.com/in/joelaundu)
-- GitHub: [github.com/JoelAundu](https://github.com/JoelAundu)
-- Location: Cape Town, South Africa
+**Computer Systems Engineering** — Cape Peninsula University of Technology
+Systems Design · Networking · Hardware Architecture · Software Engineering Principles
