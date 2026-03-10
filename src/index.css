@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #38bdf8;
+    --accent-dark: #0ea5e9;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis handles smooth scroll */
+  }
+
+  * {
+    cursor: none;
+  }
+
+  body {
+    @apply bg-bg-light dark:bg-bg-dark text-slate-900 dark:text-slate-100;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Mobile — restore default cursor */
+  @media (max-width: 768px) {
+    * { cursor: auto; }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 2px; }
+
+  /* Selection */
+  ::selection { background: rgba(56, 189, 248, 0.3); color: inherit; }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-24 px-6 md:px-12 lg:px-24;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-black tracking-tight;
+  }
+
+  .accent-text {
+    @apply text-accent;
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-bg-dark font-bold rounded-full
+           hover:bg-accent-dark transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/30;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 border border-accent/50 text-accent font-semibold
+           rounded-full hover:bg-accent/10 transition-all duration-300 hover:border-accent;
+  }
+
+  .tech-chip {
+    @apply text-xs font-mono font-semibold px-2.5 py-1 rounded-md
+           bg-accent/10 text-accent border border-accent/20;
+  }
+}
+
+/* Hero text split animation */
+.split-char {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+/* Timeline line */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, #38bdf8, transparent);
+}

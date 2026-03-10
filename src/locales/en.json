@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Available for Global Remote · US/EU Time Zones",
+    "greeting": "Hi, I'm",
+    "role1": "Software Engineer",
+    "role2": "Frontend Architect",
+    "role3": "Full Stack Developer",
+    "description": "I build scalable, high-performance applications with a focus on exceptional user experiences. Based in Cape Town — working with the world.",
+    "cta_work": "View My Work",
+    "cta_contact": "Contact Me",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Building at scale, from Cape Town to the world",
+    "bio": "Software Engineer with 7+ years of experience architecting high-performance frontend systems and full stack applications. Currently leading frontend development at Solink, serving 10,000+ daily users. Previously at Aerobotics, building React Native applications used by 50,000+ farmers across Africa.",
+    "bio2": "I'm passionate about clean architecture, developer experience, and building products that genuinely make an impact. Open to exciting global remote opportunities.",
+    "stat1_value": "7+",
+    "stat1_label": "Years Experience",
+    "stat2_value": "10K+",
+    "stat2_label": "Daily Users",
+    "stat3_value": "50K+",
+    "stat3_label": "Farmers Served",
+    "stat4_value": "5K+",
+    "stat4_label": "Concurrent Users",
+    "location": "Cape Town, South Africa",
+    "available": "Open to Remote"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies I use to build great products",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps",
+    "mobile": "Mobile & Testing"
+  },
+  "projects": {
+    "title": "Key Projects",
+    "subtitle": "Selected work demonstrating my engineering capabilities",
+    "p1_title": "Real-Time Task Management Platform",
+    "p1_role": "Full Stack Architect",
+    "p1_desc": "Architected a complete fullstack application with real-time collaboration, file uploads, and advanced user management. Features JWT authentication, live WebSocket synchronization, drag-drop uploads, and image processing.",
+    "p2_title": "Enterprise Order Management System",
+    "p2_role": "Frontend Lead",
+    "p2_desc": "Led development of a white-label OMS used by 15+ enterprise clients with fully custom branding from a single codebase. Achieved 60% faster client onboarding and 40% reduction in UI-related support tickets.",
+    "p3_title": "Agricultural Analytics Mobile App",
+    "p3_role": "React Native Developer",
+    "p3_desc": "Built and maintained a hybrid mobile app for farm management and satellite data visualization, serving 50,000+ active users with real-time monitoring capabilities and geospatial data pipelines handling 2TB+ monthly.",
+    "p4_title": "Zion Dew Naturals — Booking System",
+    "p4_role": "Full Stack Developer",
+    "p4_desc": "Built a complete booking and payment system for a natural hair consultation business. Customers pick a date and time, pay via PayFast (R600), and automatically receive a confirmation email, Google Calendar invite, and Google Meet link — all saved to a Supabase database in real time.",
+    "github": "GitHub",
+    "live": "Live Demo"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "present": "Present",
+    "job1_company": "Solink",
+    "job1_role": "Software Engineer",
+    "job1_period": "October 2022 – Present",
+    "job1_location": "Cape Town, South Africa",
+    "job1_b1": "Lead frontend development and mentor 2 junior developers, conducting code reviews and providing technical guidance",
+    "job1_b2": "Established CI/CD pipelines and frontend standards that reduced production bugs by 40%",
+    "job1_b3": "Architected white-label OMS UI enabling 15+ enterprise clients to customize branding from a single codebase, reducing dev time by 60%",
+    "job1_b4": "Engineered real-time collaborative features using WebSockets for 5,000+ concurrent users",
+    "job1_b5": "Built responsive UI component library with TypeScript + TailwindCSS, improving mobile engagement by 35%",
+    "job2_company": "Aerobotics",
+    "job2_role": "Data Specialist → Frontend Developer",
+    "job2_period": "February 2019 – September 2022",
+    "job2_location": "Cape Town, South Africa",
+    "job2_b1": "Developed and maintained a React Native mobile application serving agricultural analytics to 50,000+ farmers",
+    "job2_b2": "Implemented data visualization features for satellite imagery and farm mapping, improving engagement by 45%",
+    "job2_b3": "Processed geospatial data pipelines handling 2TB+ of satellite imagery monthly",
+    "job2_b4": "Collaborated with product team to design and implement features based on user research and analytics"
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Open to new opportunities and interesting projects",
+    "name_label": "Your Name",
+    "email_label": "Your Email",
+    "message_label": "Your Message",
+    "name_placeholder": "John Doe",
+    "email_placeholder": "john@example.com",
+    "message_placeholder": "I'd love to discuss a project or opportunity...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "or": "Or reach me directly"
+  },
+  "footer": {
+    "built": "Built with React, Three.js & GSAP",
+    "rights": "All rights reserved"
+  }
+}

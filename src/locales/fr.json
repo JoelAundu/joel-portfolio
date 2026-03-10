@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Disponible en Remote International · Fuseaux US/EU",
+    "greeting": "Bonjour, je suis",
+    "role1": "Ingénieur Logiciel",
+    "role2": "Architecte Frontend",
+    "role3": "Développeur Full Stack",
+    "description": "Je construis des applications évolutives et performantes avec un accent sur des expériences utilisateur exceptionnelles. Basé au Cap — travaillant avec le monde entier.",
+    "cta_work": "Voir Mon Travail",
+    "cta_contact": "Me Contacter",
+    "scroll": "Défiler pour explorer"
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Construire à l'échelle, du Cap au monde entier",
+    "bio": "Ingénieur Logiciel avec 7+ ans d'expérience dans l'architecture de systèmes frontend haute performance et d'applications full stack. Actuellement responsable du développement frontend chez Solink, servant 10 000+ utilisateurs quotidiens. Précédemment chez Aerobotics, développant des applications React Native pour 50 000+ agriculteurs en Afrique.",
+    "bio2": "Je suis passionné par l'architecture propre, l'expérience développeur et la création de produits qui ont un véritable impact. Ouvert à des opportunités internationales en remote.",
+    "stat1_value": "7+",
+    "stat1_label": "Ans d'Expérience",
+    "stat2_value": "10K+",
+    "stat2_label": "Utilisateurs Quotidiens",
+    "stat3_value": "50K+",
+    "stat3_label": "Agriculteurs Servis",
+    "stat4_value": "5K+",
+    "stat4_label": "Utilisateurs Simultanés",
+    "location": "Le Cap, Afrique du Sud",
+    "available": "Disponible en Remote"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Technologies que j'utilise pour créer de grands produits",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Outils & DevOps",
+    "mobile": "Mobile & Tests"
+  },
+  "projects": {
+    "title": "Projets Clés",
+    "subtitle": "Travaux sélectionnés démontrant mes capacités en ingénierie",
+    "p1_title": "Plateforme de Gestion des Tâches en Temps Réel",
+    "p1_role": "Architecte Full Stack",
+    "p1_desc": "Architecture d'une application fullstack complète avec collaboration en temps réel, téléchargement de fichiers et gestion avancée des utilisateurs. Authentification JWT, synchronisation WebSocket en direct et traitement d'images.",
+    "p2_title": "Système de Gestion des Commandes d'Entreprise",
+    "p2_role": "Lead Frontend",
+    "p2_desc": "Direction du développement d'un OMS en marque blanche utilisé par 15+ clients entreprise. 60% d'intégration client plus rapide et 40% de réduction des tickets support liés à l'UI.",
+    "p3_title": "Application Mobile d'Analyse Agricole",
+    "p3_role": "Développeur React Native",
+    "p3_desc": "Développement et maintenance d'une application mobile hybride pour la gestion agricole et la visualisation de données satellitaires, servant 50 000+ utilisateurs actifs avec surveillance en temps réel.",
+    "p4_title": "Zion Dew Naturals — Système de Réservation",
+    "p4_role": "Développeur Full Stack",
+    "p4_desc": "Création d'un système complet de réservation et de paiement pour un salon de consultation capillaire naturelle. Les clients choisissent date et heure, paient via PayFast, et reçoivent automatiquement un email de confirmation, une invitation Google Calendar et un lien Google Meet, le tout sauvegardé dans Supabase en temps réel.",
+    "github": "GitHub",
+    "live": "Démo en Direct"
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Mon parcours professionnel",
+    "present": "Présent",
+    "job1_company": "Solink",
+    "job1_role": "Ingénieur Logiciel",
+    "job1_period": "Octobre 2022 – Présent",
+    "job1_location": "Le Cap, Afrique du Sud",
+    "job1_b1": "Direction du développement frontend et mentorat de 2 développeurs junior avec revues de code et orientations techniques",
+    "job1_b2": "Mise en place de pipelines CI/CD et standards frontend ayant réduit les bugs en production de 40%",
+    "job1_b3": "Architecture d'un système UI en marque blanche permettant à 15+ clients de personnaliser leur identité depuis une seule base de code",
+    "job1_b4": "Développement de fonctionnalités collaboratives en temps réel via WebSockets pour 5 000+ utilisateurs simultanés",
+    "job1_b5": "Construction d'une bibliothèque de composants UI responsive avec TypeScript + TailwindCSS",
+    "job2_company": "Aerobotics",
+    "job2_role": "Spécialiste Données → Développeur Frontend",
+    "job2_period": "Février 2019 – Septembre 2022",
+    "job2_location": "Le Cap, Afrique du Sud",
+    "job2_b1": "Développement et maintenance d'une application React Native servant des analyses agricoles à 50 000+ agriculteurs",
+    "job2_b2": "Implémentation de visualisation de données pour les images satellitaires, améliorant l'engagement de 45%",
+    "job2_b3": "Traitement de pipelines de données géospatiales avec 2 To+ d'images satellitaires mensuelles",
+    "job2_b4": "Collaboration avec l'équipe produit pour concevoir et implémenter de nouvelles fonctionnalités"
+  },
+  "contact": {
+    "title": "Travaillons Ensemble",
+    "subtitle": "Ouvert aux nouvelles opportunités et projets intéressants",
+    "name_label": "Votre Nom",
+    "email_label": "Votre Email",
+    "message_label": "Votre Message",
+    "name_placeholder": "Jean Dupont",
+    "email_placeholder": "jean@exemple.com",
+    "message_placeholder": "J'aimerais discuter d'un projet ou d'une opportunité...",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé ! Je vous répondrai bientôt.",
+    "or": "Ou contactez-moi directement"
+  },
+  "footer": {
+    "built": "Construit avec React, Three.js et GSAP",
+    "rights": "Tous droits réservés"
+  }
+}
