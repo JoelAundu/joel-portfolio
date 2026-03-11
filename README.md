@@ -1,4 +1,4 @@
-# Joel Mosio Aundu
+# Joel Aundu
 ### Software Engineer | React · TypeScript · Node.js
 
 📍 Cape Town, South Africa &nbsp;|&nbsp; 🌍 Open to Global Remote (US/EU Time Zones)
