@@ -37,6 +37,12 @@ export default function Navbar({ dark, toggleTheme }: NavbarProps) {
     { key: 'contact', href: '#contact' },
   ]
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const target = document.querySelector(href)
+    if (target) target.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <>
       <motion.nav
@@ -51,7 +57,7 @@ export default function Navbar({ dark, toggleTheme }: NavbarProps) {
       >
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-black text-xl tracking-tight">
+          <a href="#" onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} className="font-black text-xl tracking-tight">
             <span className="text-accent">J</span>
             <span className="dark:text-white text-slate-900">A</span>
           </a>
@@ -62,6 +68,7 @@ export default function Navbar({ dark, toggleTheme }: NavbarProps) {
               <a
                 key={l.key}
                 href={l.href}
+                onClick={e => handleNavClick(e, l.href)}
                 className="text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-accent dark:hover:text-accent transition-colors duration-200"
               >
                 {t(`nav.${l.key}`)}
@@ -136,7 +143,7 @@ export default function Navbar({ dark, toggleTheme }: NavbarProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.07 }}
-                onClick={() => setMenuOpen(false)}
+                onClick={e => { handleNavClick(e, l.href); setMenuOpen(false) }}
                 className="text-3xl font-black text-slate-800 dark:text-white hover:text-accent transition-colors"
               >
                 {t(`nav.${l.key}`)}
