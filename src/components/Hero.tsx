@@ -32,7 +32,7 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [])
 
-  const nameWords = 'Joel Mosio Aundu'.split(' ')
+  const nameWords = 'Joel Aundu'.split(' ')
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden bg-bg-light dark:bg-bg-dark">
