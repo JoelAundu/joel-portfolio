@@ -34,7 +34,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-accent font-mono text-sm font-semibold mb-3">05. Contact</p>
+          <p className="text-accent font-mono text-sm font-semibold mb-3">06. Contact</p>
           <h2 className="section-title dark:text-white text-slate-900 mb-4">{t('contact.title')}</h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-4" />
           <p className="text-slate-500 dark:text-slate-400 text-lg max-w-xl">{t('contact.subtitle')}</p>
