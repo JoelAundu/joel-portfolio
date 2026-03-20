@@ -106,7 +106,7 @@ export default function About() {
               variants={fadeUp}
               initial="hidden"
               animate={inView ? 'visible' : 'hidden'}
-              className="flex justify-center lg:justify-start"
+              className="flex justify-center lg:justify-start lg:-mt-16"
             >
               <div className="relative">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/30 shadow-2xl shadow-accent/10">

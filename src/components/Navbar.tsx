@@ -32,6 +32,7 @@ export default function Navbar({ dark, toggleTheme }: NavbarProps) {
   const links = [
     { key: 'about', href: '#about' },
     { key: 'skills', href: '#skills' },
+    { key: 'growth', href: '#growth' },
     { key: 'projects', href: '#projects' },
     { key: 'experience', href: '#experience' },
     { key: 'contact', href: '#contact' },
