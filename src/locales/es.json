@@ -2,6 +2,7 @@
   "nav": {
     "about": "Sobre mí",
     "skills": "Habilidades",
+    "growth": "Crecimiento",
     "projects": "Proyectos",
     "experience": "Experiencia",
     "contact": "Contacto"
@@ -12,7 +13,7 @@
     "role1": "Ingeniero de Software",
     "role2": "Arquitecto Frontend",
     "role3": "Desarrollador Full Stack",
-    "description": "Construyo aplicaciones escalables y de alto rendimiento con un enfoque en experiencias de usuario excepcionales. Basado en Ciudad del Cabo — trabajando con el mundo.",
+    "description": "Construyo aplicaciones escalables y de alto rendimiento con un enfoque en experiencias de usuario excepcionales. Basado en Ciudad del Cabo, trabajando con el mundo.",
     "cta_work": "Ver Mi Trabajo",
     "cta_contact": "Contáctame",
     "scroll": "Desplázate para explorar"
@@ -40,6 +41,19 @@
     "backend": "Backend",
     "tools": "Herramientas & DevOps",
     "mobile": "Móvil & Testing"
+  },
+  "growth": {
+    "title": "Hacia Dónde Voy",
+    "subtitle": "Aspirando a convertirme en arquitecto de software en la era de la IA, profundizando en las disciplinas que definen los sistemas a escala.",
+    "mission": "No solo quiero escribir código. Quiero diseñar los sistemas que impulsarán la próxima generación de productos.",
+    "system_design_title": "Diseño de Sistemas & Arquitectura",
+    "system_design_desc": "Aprendiendo a diseñar sistemas que escalan de cientos a millones de usuarios, pensando en bases de datos, capas de caché, balanceadores de carga y compensaciones.",
+    "cloud_title": "Arquitectura Cloud",
+    "cloud_desc": "Construyendo infraestructura que se despliega automáticamente, escala bajo demanda y se recupera sola, con AWS como plataforma principal.",
+    "distributed_title": "Sistemas Distribuidos",
+    "distributed_desc": "Entendiendo cómo los sistemas a gran escala se comunican, mantienen consistencia y se recuperan de fallos en múltiples nodos.",
+    "patterns_title": "Patrones de Arquitectura de Software",
+    "patterns_desc": "Dominando los planos que hacen el software mantenible, testeable y extensible a escala, desde arquitectura limpia hasta diseño orientado a eventos."
   },
   "projects": {
     "title": "Proyectos Clave",
