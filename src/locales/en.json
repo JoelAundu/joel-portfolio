@@ -2,6 +2,7 @@
   "nav": {
     "about": "About",
     "skills": "Skills",
+    "growth": "Growth",
     "projects": "Projects",
     "experience": "Experience",
     "contact": "Contact"
@@ -40,6 +41,19 @@
     "backend": "Backend",
     "tools": "Tools & DevOps",
     "mobile": "Mobile & Testing"
+  },
+  "growth": {
+    "title": "Where I'm Heading",
+    "subtitle": "Striving to become a software architect in the AI age, deepening expertise across the disciplines that define systems at scale.",
+    "mission": "I don't just want to write code. I want to design the systems that power the next generation of products.",
+    "system_design_title": "System Design & Architecture",
+    "system_design_desc": "Learning to design systems that scale from hundreds to millions of users, thinking in databases, caching layers, load balancers, and trade-offs.",
+    "cloud_title": "Cloud Architecture",
+    "cloud_desc": "Building infrastructure that deploys automatically, scales on demand, and heals itself, with AWS as the primary platform.",
+    "distributed_title": "Distributed Systems",
+    "distributed_desc": "Understanding how large-scale systems communicate, stay consistent, and recover from failure across multiple nodes.",
+    "patterns_title": "Software Architecture Patterns",
+    "patterns_desc": "Mastering the blueprints that make software maintainable, testable, and extensible at scale, from clean architecture to event-driven design."
   },
   "projects": {
     "title": "Key Projects",

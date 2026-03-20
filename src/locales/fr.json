@@ -2,6 +2,7 @@
   "nav": {
     "about": "À propos",
     "skills": "Compétences",
+    "growth": "Progression",
     "projects": "Projets",
     "experience": "Expérience",
     "contact": "Contact"
@@ -12,7 +13,7 @@
     "role1": "Ingénieur Logiciel",
     "role2": "Architecte Frontend",
     "role3": "Développeur Full Stack",
-    "description": "Je construis des applications évolutives et performantes avec un accent sur des expériences utilisateur exceptionnelles. Basé au Cap — travaillant avec le monde entier.",
+    "description": "Je construis des applications évolutives et performantes avec un accent sur des expériences utilisateur exceptionnelles. Basé au Cap, travaillant avec le monde entier.",
     "cta_work": "Voir Mon Travail",
     "cta_contact": "Me Contacter",
     "scroll": "Défiler pour explorer"
@@ -40,6 +41,19 @@
     "backend": "Backend",
     "tools": "Outils & DevOps",
     "mobile": "Mobile & Tests"
+  },
+  "growth": {
+    "title": "Où Je Me Dirige",
+    "subtitle": "Aspirant à devenir architecte logiciel à l'ère de l'IA, approfondissant les disciplines qui définissent les systèmes à grande échelle.",
+    "mission": "Je ne veux pas seulement écrire du code. Je veux concevoir les systèmes qui alimenteront la prochaine génération de produits.",
+    "system_design_title": "Conception de Systèmes & Architecture",
+    "system_design_desc": "Apprendre à concevoir des systèmes qui passent de centaines à des millions d'utilisateurs, en pensant bases de données, couches de cache, équilibrage de charge et compromis.",
+    "cloud_title": "Architecture Cloud",
+    "cloud_desc": "Construire une infrastructure qui se déploie automatiquement, s'adapte à la demande et se répare elle-même, avec AWS comme plateforme principale.",
+    "distributed_title": "Systèmes Distribués",
+    "distributed_desc": "Comprendre comment les systèmes à grande échelle communiquent, maintiennent la cohérence et se remettent des pannes sur plusieurs nœuds.",
+    "patterns_title": "Patterns d'Architecture Logicielle",
+    "patterns_desc": "Maîtriser les plans qui rendent le logiciel maintenable, testable et extensible à grande échelle, de l'architecture propre à la conception événementielle."
   },
   "projects": {
     "title": "Projets Clés",
