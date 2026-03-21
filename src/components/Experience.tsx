@@ -123,14 +123,45 @@ export default function Experience() {
           <h3 className="text-xl font-black text-slate-900 dark:text-white mb-6">Education & Certifications</h3>
           <div className="grid md:grid-cols-2 gap-4">
             <div className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-5 hover:border-accent/30 transition-colors">
-              <p className="font-bold text-slate-800 dark:text-white mb-1">Full Stack Engineering Specialization</p>
+              <p className="font-bold text-slate-800 dark:text-white mb-1">Full Stack Web Development Bootcamp</p>
               <p className="text-accent text-sm font-semibold mb-1">HyperionDev</p>
-              <p className="text-xs text-slate-400">Advanced MERN Stack · Microservices · Cloud Architecture</p>
+              <p className="text-xs text-slate-400 font-mono mb-3">Apr 2020 – Aug 2020</p>
+              <ul className="space-y-1.5">
+                {[
+                  'HTML5, CSS3, Bootstrap 4',
+                  'JavaScript ES6, DOM Manipulation, jQuery',
+                  'Bash, Git & Version Control',
+                  'Node.js, Express.js, EJS',
+                  'SQL, MongoDB, Mongoose',
+                  'RESTful APIs, JSON, Authentication, Firebase',
+                  'React.js, React Hooks, Web Design',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-2 text-xs text-slate-500 dark:text-slate-400">
+                    <span className="w-1 h-1 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-5 hover:border-accent/30 transition-colors">
               <p className="font-bold text-slate-800 dark:text-white mb-1">Computer Systems Engineering</p>
               <p className="text-accent text-sm font-semibold mb-1">Cape Peninsula University of Technology</p>
-              <p className="text-xs text-slate-400">Systems Design · Networking · Software Engineering Principles</p>
+              <p className="text-xs text-slate-400 font-mono mb-3">2016 – 2019</p>
+              <ul className="space-y-1.5">
+                {[
+                  'C & Java Programming',
+                  'CISCO IT Essentials & CCNA Routing and Switching',
+                  'MySQL: Design, implement & maintain relational databases',
+                  'Digital Systems: Microcontroller programming (Arduino UNO)',
+                  'Electrical & Electronic Engineering: Circuit design & troubleshooting',
+                  'Computer hardware, software & network installation',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-2 text-xs text-slate-500 dark:text-slate-400">
+                    <span className="w-1 h-1 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </motion.div>
