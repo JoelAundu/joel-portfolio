@@ -70,6 +70,9 @@
     "p4_title": "Zion Dew Naturals — Sistema de Reservas",
     "p4_role": "Desarrollador Full Stack",
     "p4_desc": "Construí un sistema completo de reservas y pagos para un negocio de consultoría capilar natural. Los clientes eligen fecha y hora, pagan vía PayFast, y reciben automáticamente un email de confirmación, invitación de Google Calendar y enlace de Google Meet, todo guardado en Supabase en tiempo real.",
+    "p5_title": "Juice — Hub de Entrenamiento 2026",
+    "p5_role": "Proyecto Personal",
+    "p5_desc": "Un hub de entrenamiento atlético personal para seguir toda mi temporada 2026. Actualmente cubre el bloque Maratón de Ciudad del Cabo con cuenta regresiva en vivo, sesiones diarias dinámicas, zonas de ritmo y suplementos — con bloques de velocidad y rendimiento planificados tras la carrera. Construido para crecer con la temporada.",
     "github": "GitHub",
     "live": "Demo en Vivo"
   },
