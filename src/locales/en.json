@@ -70,6 +70,9 @@
     "p4_title": "Zion Dew Naturals — Booking System",
     "p4_role": "Full Stack Developer",
     "p4_desc": "Built a complete booking and payment system for a natural hair consultation business. Customers pick a date and time, pay via PayFast (R600), and automatically receive a confirmation email, Google Calendar invite, and Google Meet link — all saved to a Supabase database in real time.",
+    "p5_title": "Juice — 2026 Training Hub",
+    "p5_role": "Personal Project",
+    "p5_desc": "A personal athletic training hub built to track my full 2026 season. Currently covering the Cape Town Marathon block with a live race countdown, dynamic daily sessions, pace zones, and supplement stack — with speed and performance blocks planned post-race. Built to grow with the season.",
     "github": "GitHub",
     "live": "Live Demo"
   },
