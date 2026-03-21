@@ -121,8 +121,22 @@ export default function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
-            <a href="#contact" className="btn-outline text-sm md:text-base">
-              {t('hero.cta_contact')}
+            <a
+              href="#contact"
+              onClick={() => sessionStorage.setItem('contactReason', 'Hire / Project Enquiry')}
+              className="btn-outline text-sm md:text-base"
+            >
+              Hire Me
+            </a>
+            <a
+              href="#contact"
+              onClick={() => sessionStorage.setItem('contactReason', 'CV Request')}
+              className="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-white/20 text-slate-600 dark:text-slate-300 font-semibold rounded-full hover:border-accent/50 hover:text-accent transition-all duration-300 text-sm md:text-base"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Request CV
             </a>
           </motion.div>
 
