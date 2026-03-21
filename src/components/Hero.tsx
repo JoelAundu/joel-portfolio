@@ -124,16 +124,6 @@ export default function Hero() {
             <a href="#contact" className="btn-outline text-sm md:text-base">
               {t('hero.cta_contact')}
             </a>
-            <a
-              href="/assets/Joel-Aundu-CV.pdf"
-              download="Joel-Aundu-CV.pdf"
-              className="inline-flex items-center gap-2 px-7 py-3.5 border border-slate-300 dark:border-white/20 text-slate-600 dark:text-slate-300 font-semibold rounded-full hover:border-accent/50 hover:text-accent transition-all duration-300 text-sm md:text-base"
-            >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              </svg>
-              Download CV
-            </a>
           </motion.div>
 
           {/* Social links */}
@@ -166,7 +156,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="mailto:joel960801@gmail.com"
+              href="mailto:info@joelaundu.dev"
               className="text-slate-400 hover:text-accent transition-colors duration-200"
               aria-label="Email"
             >
