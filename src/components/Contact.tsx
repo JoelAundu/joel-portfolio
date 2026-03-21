@@ -1,22 +1,108 @@
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect, useCallback } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import emailjs from '@emailjs/browser'
+import toast from 'react-hot-toast'
+
+const EMAILJS_SERVICE_ID = 'service_p0gxmtx'
+const EMAILJS_CONTACT_TEMPLATE = 'template_8kxq94o'
+const EMAILJS_AUTOREPLY_TEMPLATE = 'template_6dcavot'
+const EMAILJS_PUBLIC_KEY = 'L9KYZsFxaxhHWn9D4'
+
+const reasons = ['Hire or Project Enquiry', 'CV Request', 'General Enquiry']
+
+function ReasonDropdown({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const [open, setOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  const handleClickOutside = useCallback((e: MouseEvent) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      setOpen(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [handleClickOutside])
+
+  return (
+    <div ref={dropdownRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        className="w-full px-4 py-3.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10
+          text-slate-900 dark:text-white text-sm font-medium text-left
+          focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20
+          hover:border-accent/50 transition-all duration-200 flex items-center justify-between"
+      >
+        <span>{value}</span>
+        <svg
+          className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {open && (
+        <div className="absolute z-50 mt-2 w-full rounded-xl bg-white dark:bg-[#1a1a2e] border border-slate-200 dark:border-white/10 shadow-xl overflow-hidden">
+          {reasons.map(r => (
+            <button
+              key={r}
+              type="button"
+              onClick={() => { onChange(r); setOpen(false) }}
+              className={`w-full px-4 py-3 text-sm text-left transition-colors duration-150
+                ${value === r
+                  ? 'bg-accent/10 text-accent font-semibold'
+                  : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5'
+                }`}
+            >
+              {r}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function Contact() {
   const { t } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle')
+  const [form, setForm] = useState({ name: '', email: '', message: '', reason: reasons[0] })
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  useEffect(() => {
+    const preset = sessionStorage.getItem('contactReason')
+    if (preset && reasons.includes(preset)) {
+      setForm(f => ({ ...f, reason: preset }))
+      sessionStorage.removeItem('contactReason')
+    }
+  }, [])
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('sending')
-    // Open email client as fallback — replace with EmailJS if needed
-    const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`)
-    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)
-    window.location.href = `mailto:info@joelaundu.dev?subject=${subject}&body=${body}`
-    setTimeout(() => setStatus('sent'), 800)
+
+    const params = {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+      reason: form.reason,
+    }
+
+    try {
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_CONTACT_TEMPLATE, params, EMAILJS_PUBLIC_KEY)
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_AUTOREPLY_TEMPLATE, params, EMAILJS_PUBLIC_KEY)
+      setForm({ name: '', email: '', message: '', reason: reasons[0] })
+      toast.success("Message sent! I'll get back to you soon.")
+    } catch {
+      toast.error('Something went wrong. Please try again.')
+    } finally {
+      setStatus('idle')
+    }
   }
 
   const inputClass = `w-full px-4 py-3.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10
@@ -49,6 +135,15 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="space-y-5"
           >
+            <div>
+              <label className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
+                Reason
+              </label>
+              <ReasonDropdown
+                value={form.reason}
+                onChange={reason => setForm(f => ({ ...f, reason }))}
+              />
+            </div>
             <div>
               <label className="block text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">
                 {t('contact.name_label')}
@@ -89,29 +184,20 @@ export default function Contact() {
               />
             </div>
 
-            {status === 'sent' ? (
-              <div className="flex items-center gap-3 px-5 py-4 rounded-xl bg-accent/10 border border-accent/30 text-accent font-semibold text-sm">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              type="submit"
+              disabled={status === 'sending'}
+              className="btn-primary w-full justify-center text-sm"
+            >
+              {status === 'sending' ? t('contact.sending') : t('contact.send')}
+              {status === 'idle' && (
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg>
-                {t('contact.success')}
-              </div>
-            ) : (
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
-                disabled={status === 'sending'}
-                className="btn-primary w-full justify-center text-sm"
-              >
-                {status === 'sending' ? t('contact.sending') : t('contact.send')}
-                {status === 'idle' && (
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                )}
-              </motion.button>
-            )}
+              )}
+            </motion.button>
           </motion.form>
 
           {/* Right: direct links */}
