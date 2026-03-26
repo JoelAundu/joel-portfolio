@@ -72,7 +72,7 @@
     "p4_desc": "Création d'un système complet de réservation et de paiement pour un salon de consultation capillaire naturelle. Les clients choisissent date et heure, paient via PayFast, et reçoivent automatiquement un email de confirmation, une invitation Google Calendar et un lien Google Meet, le tout sauvegardé dans Supabase en temps réel.",
     "p5_title": "Juice — Hub d'Entraînement 2026",
     "p5_role": "Projet Personnel",
-    "p5_desc": "Un hub d'entraînement athlétique personnel pour suivre toute ma saison 2026. Couvre actuellement le bloc Marathon du Cap avec compte à rebours en direct, séances quotidiennes dynamiques, zones de pace et stack de suppléments — avec des blocs vitesse et performance prévus après la course. Conçu pour évoluer avec la saison.",
+    "p5_desc": "Un hub d'entraînement athlétique personnel pour suivre toute ma saison 2026. Couvre actuellement le bloc Marathon du Cap avec compte à rebours en direct, séances quotidiennes dynamiques, zones de pace et stack de suppléments, avec des blocs vitesse et performance prévus après la course. Conçu pour évoluer avec la saison.",
     "github": "GitHub",
     "live": "Démo en Direct"
   },
