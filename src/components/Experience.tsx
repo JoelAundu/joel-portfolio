@@ -8,7 +8,7 @@ const jobs = [
     roleKey: 'experience.job1_role',
     periodKey: 'experience.job1_period',
     locationKey: 'experience.job1_location',
-    bullets: ['job1_b1', 'job1_b2', 'job1_b3', 'job1_b4', 'job1_b5'],
+    bullets: ['job1_b6', 'job1_b7', 'job1_b8', 'job1_b9', 'job1_b1', 'job1_b2', 'job1_b3', 'job1_b5'],
     current: true,
   },
   {

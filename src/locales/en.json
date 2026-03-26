@@ -69,10 +69,10 @@
     "p3_desc": "Built and maintained a hybrid mobile app for farm management and satellite data visualization, serving 50,000+ active users with real-time monitoring capabilities and geospatial data pipelines handling 2TB+ monthly.",
     "p4_title": "Zion Dew Naturals — Booking System",
     "p4_role": "Full Stack Developer",
-    "p4_desc": "Built a complete booking and payment system for a natural hair consultation business. Customers pick a date and time, pay via PayFast (R600), and automatically receive a confirmation email, Google Calendar invite, and Google Meet link — all saved to a Supabase database in real time.",
+    "p4_desc": "Built a complete booking and payment system for a natural hair consultation business. Customers pick a date and time, pay via PayFast (R600), and automatically receive a confirmation email, Google Calendar invite, and Google Meet link, all saved to a Supabase database in real time.",
     "p5_title": "Juice — 2026 Training Hub",
     "p5_role": "Personal Project",
-    "p5_desc": "A personal athletic training hub built to track my full 2026 season. Currently covering the Cape Town Marathon block with a live race countdown, dynamic daily sessions, pace zones, and supplement stack — with speed and performance blocks planned post-race. Built to grow with the season.",
+    "p5_desc": "A personal athletic training hub built to track my full 2026 season. Currently covering the Cape Town Marathon block with a live race countdown, dynamic daily sessions, pace zones, and supplement stack, with speed and performance blocks planned post-race. Built to grow with the season.",
     "github": "GitHub",
     "live": "Live Demo"
   },
@@ -87,8 +87,11 @@
     "job1_b1": "Lead frontend development and mentor 2 junior developers, conducting code reviews and providing technical guidance",
     "job1_b2": "Established CI/CD pipelines and frontend standards that reduced production bugs by 40%",
     "job1_b3": "Architected white-label OMS UI enabling 15+ enterprise clients to customize branding from a single codebase, reducing dev time by 60%",
-    "job1_b4": "Engineered real-time collaborative features using WebSockets for 5,000+ concurrent users",
     "job1_b5": "Built responsive UI component library with TypeScript + TailwindCSS, improving mobile engagement by 35%",
+    "job1_b6": "Architected and built data visualisation dashboards consuming raw telemetry from solar energy assets, transforming instrument readings into ApexCharts heatmaps and performance graphs for real-time operational monitoring",
+    "job1_b7": "Built multi-step configuration interfaces for instrument setup, enabling engineers to define, connect, and calibrate hardware assets through structured workflows that bridge physical infrastructure and digital configuration",
+    "job1_b8": "Implemented interactive map interfaces allowing users to select geographic coordinates, draw custom boundaries, and define site perimeters for solar asset deployment",
+    "job1_b9": "Engineered reactive UI components consuming live sensor feeds, managing real-time state updates across complex dashboard layouts with consistent performance across concurrent data streams",
     "job2_company": "Aerobotics",
     "job2_role": "Data Specialist → Frontend Developer",
     "job2_period": "February 2019 – September 2022",
@@ -96,7 +99,7 @@
     "job2_b1": "Developed and maintained a React Native mobile application serving agricultural analytics to 50,000+ farmers",
     "job2_b2": "Implemented data visualization features for satellite imagery and farm mapping, improving engagement by 45%",
     "job2_b3": "Processed geospatial data pipelines handling 2TB+ of satellite imagery monthly",
-    "job2_b4": "Collaborated with product team to design and implement features based on user research and analytics"
+    "job2_b4": "Contributed to cross-functional feature development based on user research and analytics"
   },
   "contact": {
     "title": "Let's Work Together",
