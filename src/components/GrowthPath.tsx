@@ -5,7 +5,6 @@ import { GitHubCalendar } from 'react-github-calendar'
 import { useTheme } from '../hooks/useTheme'
 
 const GITHUB_USER = 'JoelAundu'
-const STATS_THEME = 'title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8&bg_color=00000000&hide_border=true&ring_color=38bdf8'
 
 const focusAreas = [
   {
@@ -130,26 +129,6 @@ function GitHubActivity() {
           <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
           Active
         </span>
-      </div>
-
-      {/* Stats row */}
-      <div className="grid md:grid-cols-2 gap-4 mb-4">
-        <div className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-4 flex items-center justify-center overflow-hidden">
-          <img
-            src={`https://github-readme-stats.vercel.app/api?username=${GITHUB_USER}&show_icons=true&${STATS_THEME}&hide_title=false`}
-            alt="GitHub Stats"
-            className="w-full max-w-sm"
-            loading="lazy"
-          />
-        </div>
-        <div className="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-2xl p-4 flex items-center justify-center overflow-hidden">
-          <img
-            src={`https://github-readme-streak-stats.herokuapp.com/?user=${GITHUB_USER}&theme=transparent&hide_border=true&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideLabels=94a3b8&dates=64748b&stroke=ffffff10`}
-            alt="GitHub Streak"
-            className="w-full max-w-sm"
-            loading="lazy"
-          />
-        </div>
       </div>
 
       {/* Interactive contribution calendar */}
