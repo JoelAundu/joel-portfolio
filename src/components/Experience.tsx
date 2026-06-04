@@ -4,12 +4,20 @@ import { useTranslation } from 'react-i18next'
 
 const jobs = [
   {
+    companyKey: 'experience.job3_company',
+    roleKey: 'experience.job3_role',
+    periodKey: 'experience.job3_period',
+    locationKey: 'experience.job3_location',
+    bullets: ['job3_b1', 'job3_b2'],
+    current: true,
+  },
+  {
     companyKey: 'experience.job1_company',
     roleKey: 'experience.job1_role',
     periodKey: 'experience.job1_period',
     locationKey: 'experience.job1_location',
     bullets: ['job1_b6', 'job1_b7', 'job1_b8', 'job1_b9', 'job1_b1', 'job1_b2', 'job1_b3', 'job1_b5'],
-    current: true,
+    current: false,
   },
   {
     companyKey: 'experience.job2_company',
