@@ -29,7 +29,7 @@
 - Developed secure file upload system with image processing and 50MB/user storage quotas
 - Collaborated on GraphQL schemas, PostgreSQL optimization, and microservice architecture
 
-### Aerobotics — Data Specialist → Frontend Developer
+### Aerobotics — Data Specialist
 **February 2019 – September 2022 | Cape Town, South Africa**
 
 - Developed and maintained React Native mobile application serving agricultural analytics to **50,000+ farmers**
