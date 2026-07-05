@@ -21,8 +21,8 @@
   "about": {
     "title": "About Me",
     "subtitle": "Building at scale, from Cape Town to the world",
-    "bio": "Software Engineer with experience architecting high-performance frontend systems and full stack applications. Currently at Entelect, one of South Africa's leading engineering consultancies. Previously at SOLINK leading frontend development for 10,000+ daily users, and at Aerobotics building React Native applications used by 50,000+ farmers across Africa.",
-    "bio2": "I'm passionate about clean architecture, developer experience, and building products that genuinely make an impact. Open to exciting global remote opportunities.",
+    "bio": "Software Engineer with experience architecting high-performance frontend systems and full stack applications. Currently at Entelect, one of South Africa's leading engineering consultancies.",
+    "bio2": "I'm passionate about clean architecture, developer experience, and building products that genuinely make an impact. Outside of work, running helps me clear my head. I also pace and help lead a group of runners through marathon training blocks, because running takes community and collaboration just as much as effort, and there's nothing better than seeing someone hit a goal they've been chasing. I play soccer now and then too, and you'll usually find me at the beach or in the gym when I'm not running.",
     "stat1_value": "7+",
     "stat1_label": "Years Experience",
     "stat2_value": "10K+",
