@@ -2,21 +2,44 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
-const jobs = [
+interface ClientPlacement {
+  nameKey: string
+  roleKey: string
+  bullets: string[]
+}
+
+interface Job {
+  companyKey: string
+  roleKey: string
+  periodKey: string
+  locationKey: string
+  bullets: string[]
+  current: boolean
+  clients?: ClientPlacement[]
+}
+
+const jobs: Job[] = [
   {
     companyKey: 'experience.job3_company',
     roleKey: 'experience.job3_role',
     periodKey: 'experience.job3_period',
     locationKey: 'experience.job3_location',
-    bullets: ['job3_b1', 'job3_b2'],
+    bullets: ['job3_b1'],
     current: true,
+    clients: [
+      {
+        nameKey: 'experience.job3_client1_name',
+        roleKey: 'experience.job3_client1_role',
+        bullets: ['job3_client1_b1', 'job3_client1_b2', 'job3_client1_b3'],
+      },
+    ],
   },
   {
     companyKey: 'experience.job1_company',
     roleKey: 'experience.job1_role',
     periodKey: 'experience.job1_period',
     locationKey: 'experience.job1_location',
-    bullets: ['job1_b6', 'job1_b7', 'job1_b8', 'job1_b9', 'job1_b1', 'job1_b2', 'job1_b3', 'job1_b5'],
+    bullets: ['job1_b6', 'job1_b7', 'job1_b8', 'job1_b9', 'job1_b3', 'job1_b5'],
     current: false,
   },
   {
@@ -24,12 +47,12 @@ const jobs = [
     roleKey: 'experience.job2_role',
     periodKey: 'experience.job2_period',
     locationKey: 'experience.job2_location',
-    bullets: ['job2_b1', 'job2_b2', 'job2_b3', 'job2_b4'],
+    bullets: ['job2_b2', 'job2_b3', 'job2_b4'],
     current: false,
   },
 ]
 
-function JobCard({ job, index }: { job: typeof jobs[0]; index: number }) {
+function JobCard({ job, index }: { job: Job; index: number }) {
   const { t } = useTranslation()
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
@@ -84,6 +107,28 @@ function JobCard({ job, index }: { job: typeof jobs[0]; index: number }) {
             </motion.li>
           ))}
         </ul>
+
+        {job.clients && (
+          <div className="mt-6 space-y-5">
+            {job.clients.map((client, ci) => (
+              <div key={ci} className="pl-4 border-l-2 border-accent/30">
+                <span className="text-xs font-bold text-accent uppercase tracking-wider">Client Placement</span>
+                <div className="flex flex-wrap items-baseline gap-x-2 mt-1 mb-3">
+                  <h4 className="font-bold text-slate-800 dark:text-white">{t(client.nameKey)}:</h4>
+                  <span className="text-sm text-slate-500 dark:text-slate-400 font-medium">{t(client.roleKey)}</span>
+                </div>
+                <ul className="space-y-2.5">
+                  {client.bullets.map(bKey => (
+                    <li key={bKey} className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent/60 mt-2 flex-shrink-0" />
+                      {t(`experience.${bKey}`)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </motion.div>
   )
