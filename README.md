@@ -39,6 +39,18 @@
 
 ---
 
+## Technical Skills
+
+| Category | Technologies |
+|----------|-------------|
+| Languages | TypeScript, JavaScript, SQL, GraphQL, HTML5, CSS |
+| Frameworks | React, Next.js, Astro, Node.js, Express, React Native, Jest |
+| Databases | PostgreSQL, MongoDB, Prisma |
+| Tools | Docker, Git, AWS, Firebase, TailwindCSS, WebSockets, JWT, CI/CD |
+| Methodologies | Agile, Scrum, Microservices, TDD, System Design |
+
+---
+
 ## Key Projects
 
 ### Zion Dew Naturals — Booking & Payment System
@@ -61,18 +73,6 @@ Frontend Lead
 React Native Developer
 - Built and maintained a hybrid mobile app for farm management and satellite data visualization for 50,000+ active users
 - **Stack:** React Native, JavaScript, Firebase, Mapbox
-
----
-
-## Technical Skills
-
-| Category | Technologies |
-|----------|-------------|
-| Languages | TypeScript, JavaScript, SQL, GraphQL, HTML5, CSS |
-| Frameworks | React, Next.js, Astro, Node.js, Express, React Native, Jest |
-| Databases | PostgreSQL, MongoDB, Prisma |
-| Tools | Docker, Git, AWS, Firebase, TailwindCSS, WebSockets, JWT, CI/CD |
-| Methodologies | Agile, Scrum, Microservices, TDD, System Design |
 
 ---
 
