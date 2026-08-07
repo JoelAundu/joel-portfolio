@@ -30,7 +30,7 @@ const jobs: Job[] = [
       {
         nameKey: 'experience.job3_client1_name',
         roleKey: 'experience.job3_client1_role',
-        bullets: ['job3_client1_b1', 'job3_client1_b2', 'job3_client1_b3'],
+        bullets: ['job3_client1_b1', 'job3_client1_b2'],
       },
     ],
   },
