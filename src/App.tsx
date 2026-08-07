@@ -55,10 +55,10 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
+        <Projects />
         <Skills />
         <GrowthPath />
-        <Projects />
-        <Experience />
         <Contact />
       </main>
       <Footer />

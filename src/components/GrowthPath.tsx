@@ -184,7 +184,7 @@ export default function GrowthPath() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-accent font-mono text-sm font-semibold mb-3">03. Growth Path</p>
+          <p className="text-accent font-mono text-sm font-semibold mb-3">05. Growth Path</p>
           <h2 className="section-title dark:text-white text-slate-900 mb-4">{t('growth.title')}</h2>
           <div className="w-16 h-1 bg-accent rounded-full mb-4" />
           <p className="text-slate-500 dark:text-slate-400 text-lg max-w-2xl">{t('growth.subtitle')}</p>
