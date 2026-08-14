@@ -12,13 +12,13 @@ Add ideas here as you think of them. When ready to build, tell Claude:
 - Keep adding new projects from the 100 Days Coding Challenge
 - Each project added = more proof of skill = stronger profile
 - Push to GitHub daily (green squares show consistency)
-- Share progress on LinkedIn — builds visibility with recruiters
+- Share progress on LinkedIn to build visibility with recruiters
 - Apply actively on OfferZen, LinkedIn, RemoteOK, WeWorkRemotely
 
 ---
 
-## 100 Days Coding Challenge — Projects to Add
-*(Add each project here as you complete it — then tell Claude to add it to the portfolio)*
+## 100 Days Coding Challenge Projects to Add
+*(Add each project here as you complete it, then tell Claude to add it to the portfolio)*
 
 - [ ] Day 1–10: *(add what you built)*
 - [ ] Day 11–20: *(add what you built)*
@@ -50,7 +50,7 @@ Add ideas here as you think of them. When ready to build, tell Claude:
 - [ ] Add profile photo to the Hero section (next to the name)
 - [ ] Add a preloader / intro animation before the page loads
 - [ ] Add a "back to top" button that appears on scroll
-- [ ] Improve mobile hero — 3D scene is heavy, consider lighter version on mobile
+- [ ] Improve mobile hero. 3D scene is heavy, consider lighter version on mobile
 
 ### Features
 - [ ] Wire up contact form with EmailJS so messages arrive in Gmail

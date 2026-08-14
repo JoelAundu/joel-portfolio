@@ -18,7 +18,7 @@
 
 ## Professional Experience
 
-### Solink — Software Engineer
+### Solink, Software Engineer
 **October 2022 – Present | Cape Town, South Africa**
 
 - Lead frontend development and mentor 2 junior developers, conducting code reviews and providing technical guidance
@@ -29,7 +29,7 @@
 - Developed secure file upload system with image processing and 50MB/user storage quotas
 - Collaborated on GraphQL schemas, PostgreSQL optimization, and microservice architecture
 
-### Aerobotics — Data Specialist
+### Aerobotics, Data Specialist
 **February 2019 – September 2022 | Cape Town, South Africa**
 
 - Developed and maintained React Native mobile application serving agricultural analytics to **50,000+ farmers**
@@ -53,7 +53,7 @@
 
 ## Key Projects
 
-### Zion Dew Naturals — Booking & Payment System
+### Zion Dew Naturals, Booking & Payment System
 Full Stack Developer
 - Built a complete online booking and payment system for a natural hair consultation business
 - Customers book a date and time, pay via PayFast, and automatically receive a confirmation email, Google Calendar invite, and Google Meet link
@@ -66,7 +66,7 @@ Full Stack Architect
 
 ### Enterprise Order Management System
 Frontend Lead
-- Led development of a white-label OMS used by 15+ enterprise clients — 60% faster onboarding, 40% fewer support tickets
+- Led development of a white-label OMS used by 15+ enterprise clients, delivering 60% faster onboarding and 40% fewer support tickets
 - **Stack:** React, GraphQL, TypeScript, TailwindCSS, Firebase
 
 ### Agricultural Analytics Mobile App
@@ -78,8 +78,8 @@ React Native Developer
 
 ## Education & Certifications
 
-**Full Stack Engineering Specialization** — HyperionDev
+**Full Stack Engineering Specialization**, HyperionDev
 Advanced MERN Stack · Microservices · Cloud Architecture
 
-**Computer Systems Engineering** — Cape Peninsula University of Technology
+**Computer Systems Engineering**, Cape Peninsula University of Technology
 Systems Design · Networking · Hardware Architecture · Software Engineering Principles
